@@ -1,0 +1,146 @@
+@use "../abstracts";
+
+.footer {
+  margin-top: 80px;
+  padding: 50px 0px 30px;
+  background: var(--header-bg-color);
+
+  @include abstracts.screen(sm) {
+    padding: 30px 0px;
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 4.2rem;
+    font-weight: 700;
+
+    @include abstracts.screen(xl) {
+      font-size: 3rem;
+    }
+
+    @include abstracts.screen(lg) {
+      margin-top: 40px;
+    }
+  }
+
+  &__social-wrap {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    column-gap: 50px;
+
+    @include abstracts.screen(xl) {
+      column-gap: 30px;
+    }
+  }
+
+  &__social {
+    height: 30px;
+    transition: scale 0.25s;
+
+    &:hover {
+      scale: 1.05;
+    }
+
+    @include abstracts.screen(xl) {
+      height: 25px;
+    }
+  }
+
+  &__desc {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+    @include abstracts.screen(xl) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    color: var(--body-bg-color);
+    font-size: 1.8rem;
+    line-height: 35px;
+    background: var(--text-color);
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &-icon {
+      height: 40px;
+      filter: var(--footer-btn-icon);
+    }
+  }
+
+  &__copy-right {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    @include abstracts.screen(xl) {
+      font-size: 1.6rem;
+    }
+
+    @include abstracts.screen(md) {
+      margin-left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+.footer-column {
+  flex-shrink: 0;
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+
+    @include abstracts.screen(xl) {
+      font-size: 2.2rem;
+    }
+
+    @include abstracts.screen(sm) {
+      margin-top: 20px;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+
+    &--single {
+      margin-top: 60px;
+
+      @include abstracts.screen(xl) {
+        margin-top: 53px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 12px 0px;
+    font-size: 1.6rem;
+
+    &:hover {
+      text-shadow: 1px 0 0 currentColor;
+      opacity: 0.8;
+    }
+
+    @include abstracts.screen(xl) {
+      font-size: 1.4rem;
+    }
+  }
+}

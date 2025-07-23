@@ -87,9 +87,11 @@
 
   &__copy-right {
     font-size: 1.8rem;
+    opacity: 0.4;
     margin-top: 30px;
     margin-left: 50%;
     transform: translateX(-50%);
+    user-select: none;
 
     @include abstracts.screen(xl) {
       font-size: 1.6rem;

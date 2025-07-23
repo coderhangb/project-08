@@ -51,4 +51,8 @@ html.dark {
   // Footer
   --footer-btn-icon: brightness(0) saturate(100%) invert(8%) sepia(11%)
     saturate(3110%) hue-rotate(210deg) brightness(100%) contrast(97%);
+
+  // Auth
+  --auth-intro-bg: #171c28;
+  --auth-content-bg: #292e39;
 }

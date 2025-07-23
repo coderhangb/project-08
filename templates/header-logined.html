@@ -13,7 +13,7 @@
     </button>
 
     <!-- Logo -->
-    <a href="./" class="logo top-bar__logo margin">
+    <a href="./" class="logo top-bar__logo">
       <img
         src="./assets/icon/icon.svg"
         alt="grocerymart"
@@ -27,6 +27,18 @@
       <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
         <img src="./assets/icon/arrow-left.svg" alt="" class="icon" />
       </button>
+
+      <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./assets/icon/buy.svg" alt="" class="nav-btn__icon icon" />
+        <span class="nav-btn__title">Card</span>
+        <span class="nav-btn__qnt">3</span>
+      </a>
+
+      <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./assets/icon/heart.svg" alt="" class="nav-btn__icon icon" />
+        <span class="nav-btn__title">Favorite</span>
+        <span class="nav-btn__qnt">3</span>
+      </a>
 
       <ul class="navbar__list js-dropdown-list">
         <li class="navbar__item">
@@ -4735,10 +4747,37 @@
     <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
     <!-- Action -->
     <div class="top-act">
-      <a href="./sign-in.html" class="btn btn--text d-md-none">Sign In</a>
-      <a href="./sign-up.html" class="btn btn--primary top-act__sign-up"
-        >Sign Up</a
-      >
+      <div class="top-act__group d-md-none top-act__group--single">
+        <button class="top-act__btn">
+          <img
+            src="./assets/icon/search.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
+        </button>
+      </div>
+
+      <div class="top-act__group d-md-none">
+        <button class="top-act__btn">
+          <img
+            src="./assets/icon/heart.svg"
+            alt=""
+            class="top-act__icon icon"
+          />
+          <span class="top-act__title">03</span>
+        </button>
+
+        <div class="top-act__separate"></div>
+
+        <button class="top-act__btn">
+          <img src="./assets/icon/buy.svg" alt="" class="top-act__icon icon" />
+          <span class="top-act__title">$65.42</span>
+        </button>
+      </div>
+
+      <div class="top-act__user">
+        <img src="./assets/img/avatar.jpg" alt="" class="top-act__avatar" />
+      </div>
     </div>
   </div>
 </div>

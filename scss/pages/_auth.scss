@@ -10,6 +10,8 @@
 
   &__intro,
   &__content {
+    display: flex;
+    align-items: center;
     flex: 1;
     padding: 0px 30px;
   }
@@ -17,10 +19,8 @@
   &__intro {
     position: relative;
     background: var(--auth-intro-bg);
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     row-gap: 50px;
 
     &-logo,
@@ -39,6 +39,7 @@
     }
 
     &-img {
+      width: var(--width);
       max-width: 100%;
     }
 
@@ -114,6 +115,15 @@
     }
   }
 
+  &__message {
+    margin-top: 30px;
+    margin-bottom: -30px;
+
+    @include abstracts.screen(md) {
+      margin-bottom: 0;
+    }
+  }
+
   &__form {
     width: 100%;
     margin-top: 30px;
@@ -165,6 +175,9 @@
     }
 
     &-link {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 10px;
       margin-left: 10px;
       font-size: inherit;
     }

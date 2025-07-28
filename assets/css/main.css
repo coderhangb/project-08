@@ -1782,6 +1782,11 @@ html.dark {
   border-left: transparent;
   border-right: transparent;
 }
+.act-dropdown__separate {
+  margin: 20px 0px;
+  height: 1px;
+  background: var(--header-act-dropdown-border-bg);
+}
 .act-dropdown__row {
   display: flex;
   justify-content: space-between;

@@ -339,6 +339,12 @@
     border-right: transparent;
   }
 
+  &__separate {
+    margin: 20px 0px;
+    height: 1px;
+    background: var(--header-act-dropdown-border-bg);
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;

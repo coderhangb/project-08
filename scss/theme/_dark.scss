@@ -89,4 +89,17 @@ html.dark {
 
   // Text content
   --text-content-hr-bg: #3e4043;
+
+  // Checkout
+  --checkout-breadcrumbs-bg: #171c28;
+  --checkout-card-info-bg: #171c28;
+  --checkout-card-info-shadow: rgba(23, 28, 40, 0.2);
+  --checkout-border-color: #292e39;
+  --checkout-input-border-color: #292e39;
+  --checkout-gift-bg: #292e39;
+  --checkout-gift-shadow: transparent;
+
+  @include abstracts.screen(xl) {
+    --checkout-input-border-color: #fff;
+  }
 }

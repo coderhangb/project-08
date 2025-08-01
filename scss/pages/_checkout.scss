@@ -45,6 +45,25 @@
     }
   }
 
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41667;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+
+  &__sub-heading {
+    margin: 30px 0px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44444;
+  }
+
   &__list {
     margin-top: -30px;
 
@@ -248,6 +267,10 @@
     font-weight: 500;
     line-height: 1.46667;
 
+    &-btn {
+      display: flex;
+    }
+
     @include abstracts.screen(md) {
       font-size: 1.4rem;
       line-height: 1.42857;
@@ -325,5 +348,140 @@
     margin-top: 10px;
     font-size: 1.4rem;
     line-height: 1.42857;
+  }
+}
+
+.user-address {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__btn {
+    @include abstracts.screen(md) {
+      height: 46px;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44444;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__desc {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    line-height: 1.46667;
+  }
+
+  &__message {
+    margin-top: 30px;
+    font-weight: 500;
+  }
+
+  &__link {
+    color: #0071dc;
+  }
+}
+
+.address-card {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+
+  @include abstracts.screen(md) {
+    flex-direction: column;
+  }
+
+  &__left {
+    flex: 1;
+    display: flex;
+    column-gap: 16px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44444;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__desc {
+    width: min(520px, 90%);
+    margin-top: 4px;
+    font-size: 1.5rem;
+    line-height: 1.46667;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.4rem;
+      line-height: 1.42857;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 30px;
+    font-size: 1.4rem;
+    line-height: 1.42857;
+    list-style: disc inside;
+
+    @include abstracts.screen(sm) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__list-item {
+    padding-left: 8px;
+  }
+
+  &__ctrl {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      font-size: 1.8rem;
+      line-height: 1.44444;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+
+    &-input {
+      appearance: none;
+
+      &::before {
+        content: url("../icon/checkbox-unchecked.svg");
+        filter: var(--icon-color);
+      }
+
+      &:checked::before {
+        content: url("../icon/checkbox-checked.svg");
+        filter: none;
+      }
+    }
   }
 }

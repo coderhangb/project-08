@@ -101,6 +101,8 @@ html.dark {
   --checkout-input-border-color: #292e39;
   --checkout-gift-bg: #292e39;
   --checkout-gift-shadow: transparent;
+  --checkout-payment-item-bg: #292e39;
+  --checkout-payment-item-thumb-shadow: transparent;
 
   @include abstracts.screen(xl) {
     --checkout-input-border-color: #fff;

@@ -10,6 +10,7 @@ $error-color: #ed4337;
 
   &__row {
     display: flex;
+    align-items: center;
     column-gap: 30px;
 
     @include abstracts.screen(md) {
@@ -23,6 +24,28 @@ $error-color: #ed4337;
     > * {
       flex: 1;
     }
+
+    &--in-one {
+      margin-top: 30px;
+      column-gap: 0;
+      border-radius: 10px;
+      border: 1px solid #ededf6;
+
+      @include abstracts.screen(md) {
+        margin-top: 20px;
+      }
+
+      @include abstracts.screen(sm) {
+        flex-direction: initial;
+      }
+    }
+  }
+
+  &__separate {
+    flex: none;
+    width: 1px;
+    height: 26px;
+    background: #d2d1d6;
   }
 
   &__group {
@@ -36,6 +59,10 @@ $error-color: #ed4337;
     &--inline {
       display: flex;
       align-items: center;
+    }
+
+    &--no-margin {
+      margin-top: 0;
     }
   }
 
@@ -87,6 +114,10 @@ $error-color: #ed4337;
 
     &--small {
       height: 42px;
+    }
+
+    &--none-border {
+      border: none;
     }
 
     @include abstracts.screen(md) {
@@ -152,12 +183,19 @@ $error-color: #ed4337;
     }
   }
 
+  &__dialog-heading {
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
   &__close-dialog {
     position: absolute;
     top: 0;
     right: 0;
     font-size: 3rem;
-    padding: 2px 18px;
+    padding: 12px 18px;
     opacity: 0.8;
   }
 
@@ -170,12 +208,15 @@ $error-color: #ed4337;
     border-bottom: 1px solid #d2d1d6;
 
     @include abstracts.screen(lg) {
-      height: 42px;
+      height: 48px;
     }
 
     @include abstracts.screen(sm) {
-      margin-top: 30px;
       flex-direction: row-reverse;
+      margin: 10px 30px 0px;
+      padding: 0px 14px;
+      border: 1px solid #d2d1d6;
+      border-radius: 10px;
     }
 
     &-input {
@@ -192,6 +233,10 @@ $error-color: #ed4337;
       margin-left: 10px;
       width: 16px;
 
+      @include abstracts.screen(lg) {
+        width: 20px;
+      }
+
       @include abstracts.screen(sm) {
         margin-left: 0;
         margin-right: 10px;
@@ -204,6 +249,10 @@ $error-color: #ed4337;
     margin-top: 10px;
     overflow-y: auto;
     overscroll-behavior: contain;
+
+    @supports (-webkit-touch-callout: none) {
+      padding-bottom: 300px;
+    }
   }
 
   &__option {
@@ -211,7 +260,8 @@ $error-color: #ed4337;
     font-size: 1.4rem;
 
     @include abstracts.screen(lg) {
-      padding: 14px 20px;
+      padding: 18px 30px;
+      font-size: 1.6rem;
     }
 
     &--current {
@@ -291,6 +341,12 @@ $error-color: #ed4337;
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 1.45455;
+
+    &--medium {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      line-height: 1.44444;
+    }
 
     &--small {
       margin-bottom: 10px;

@@ -127,4 +127,8 @@ html {
   // Dialog
   --dialog-bg: #fff;
   --dialog-shadow: rgba(237, 237, 246, 0.2);
+
+  .user-menu__icon--light {
+    display: none;
+  }
 }

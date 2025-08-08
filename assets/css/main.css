@@ -1438,6 +1438,9 @@ html {
     --review-card-bg: #fff;
   }
 }
+html .user-menu__icon--light {
+  display: none;
+}
 
 html.dark {
   --text-color: #fff;
@@ -1524,6 +1527,12 @@ html.dark {
   html.dark {
     --checkout-input-border-color: #fff;
   }
+}
+html.dark .user-menu__icon--dark {
+  display: none;
+}
+html.dark .user-menu__icon--light {
+  display: block;
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
@@ -1763,12 +1772,26 @@ html.dark {
   height: 30px;
   background: var(--top-act-group-separate);
 }
+.top-act__user {
+  position: relative;
+}
+.top-act__user:hover .act-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
 .top-act__avatar {
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 8px;
   cursor: pointer;
+}
+.top-act__dropdown {
+  right: -15px !important;
+  width: min(300px, 100vw) !important;
+}
+.top-act__dropdown-arrow {
+  right: 15px !important;
 }
 
 .nav-btn {
@@ -1899,6 +1922,50 @@ html.dark {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.46667;
+}
+
+.user-menu__top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user-menu__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.user-menu__name {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 4px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.44444;
+}
+.user-menu__blue-tick {
+  width: 15px;
+}
+.user-menu__list {
+  margin-top: 30px;
+}
+.user-menu__list-separate {
+  margin: 10px 0px;
+  width: 100%;
+  height: 1px;
+  background: #d2d1d6;
+}
+.user-menu__link {
+  display: flex;
+  column-gap: 15px;
+  padding: 12px 0px;
+}
+.user-menu__link:hover {
+  font-weight: 500;
+}
+.user-menu__icon {
+  width: 20px;
 }
 
 .footer {

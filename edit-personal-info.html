@@ -83,7 +83,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
-    <title>Profile | Project 08</title>
+    <title>Personal info | Project 08</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -124,7 +124,7 @@
         <!-- Profile content -->
         <div class="profile-container">
           <div class="row gy-md-3 gy-sm-2">
-            <div class="col-3 col-xxl-4 col-lg-5 col-md-12">
+            <div class="col-3 col-xxl-4 d-lg-none">
               <aside class="profile__sidebar">
                 <div class="profile-user">
                   <img
@@ -143,7 +143,7 @@
                   <h3 class="profile-menu__title">Manage Account</h3>
                   <ul class="profile-menu__list">
                     <li>
-                      <a href="./edit-personal-info.html" class="profile-menu__link">
+                      <a href="#!" class="profile-menu__link">
                         <span class="profile-menu__icon">
                           <img
                             src="./assets/icon/profile.svg"
@@ -276,222 +276,118 @@
               </aside>
             </div>
 
-            <div class="col-9 col-xxl-8 col-lg-7 col-md-12">
+            <div class="col-9 col-xxl-8 col-lg-12">
               <div class="cart-info">
                 <div class="row gy-3">
                   <div class="col-12">
-                    <h2 class="cart-info__heading">My Wallet</h2>
-                    <p class="cart-info__desc profile__desc">Payment methods</p>
+                    <h2 class="cart-info__heading">
+                      <a href="./profile.html">
+                        <img
+                          src="./assets/icon/arrow-left.svg"
+                          alt=""
+                          class="cart-info__back-arrow icon"
+                        />
+                      </a>
+                      Personal info
+                    </h2>
 
-                    <div
-                      class="row row-cols-3 row-cols-xxl-2 row-cols-lg-1 gy-sm-2"
-                    >
-                      <!-- Payment card 1 -->
-                      <div class="col">
-                        <article
-                          class="payment-card"
-                          style="--bg-color: #1e2e69"
-                        >
-                          <img
-                            src="./assets/img/card/plane-bg.svg"
-                            alt=""
-                            class="payment-card__img"
-                          />
-
-                          <div class="payment-card__top">
-                            <img
-                              src="./assets/img/card/plane.svg"
-                              alt=""
-                              class="payment-card__icon"
+                    <form action="./profile.html" class="form form-card">
+                      <div class="form__row form-card__row">
+                        <div class="form__group">
+                          <label
+                            for="full-name"
+                            class="form__label form__label--medium"
+                          >
+                            Full name
+                          </label>
+                          <div class="form__text-input">
+                            <input
+                              type="text"
+                              name="full-name"
+                              id="full-name"
+                              class="form__input"
+                              placeholder="Full name"
+                              value="QZinhh"
+                              required
                             />
-                            <span class="payment-card__type">FeatherCard</span>
                           </div>
+                        </div>
 
-                          <div class="payment-card__number">
-                            1234 4567 8901 2221
+                        <div class="form__group">
+                          <label
+                            for="email"
+                            class="form__label form__label--medium"
+                          >
+                            Email address
+                          </label>
+                          <div class="form__text-input">
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="form__input"
+                              placeholder="Email address"
+                              value="12345678@gm.uit.edu.vn"
+                              required
+                            />
                           </div>
-
-                          <div class="payment-card__bottom">
-                            <div class="div">
-                              <p class="payment-card__label">Card Holder</p>
-                              <p class="payment-card__value">Imran Khan</p>
-                            </div>
-                            <div class="div">
-                              <p class="payment-card__label">Expired</p>
-                              <p class="payment-card__value">10/22</p>
-                            </div>
-                            <div class="payment-card__circle"></div>
-                          </div>
-                        </article>
+                        </div>
                       </div>
 
-                      <!-- Payment card 2 -->
-                      <div class="col">
-                        <article
-                          class="payment-card"
-                          style="--bg-color: #354151"
-                        >
-                          <img
-                            src="./assets/img/card/leaf-bg.svg"
-                            alt=""
-                            class="payment-card__img"
-                          />
-
-                          <div class="payment-card__top">
-                            <img
-                              src="./assets/img/card/leaf.svg"
-                              alt=""
-                              class="payment-card__icon"
+                      <div class="form__row form-card__row">
+                        <div class="form__group">
+                          <label
+                            for="phone-number"
+                            class="form__label form__label--medium"
+                          >
+                            Phone number
+                          </label>
+                          <div class="form__text-input">
+                            <input
+                              type="tel"
+                              name="phone-number"
+                              id="phone-number"
+                              class="form__input"
+                              placeholder="Phone number"
+                              value="+008 01234 56789"
+                              required
                             />
-                            <span class="payment-card__type">FeatherCard</span>
                           </div>
+                        </div>
 
-                          <div class="payment-card__number">
-                            1234 4567 8901 2221
+                        <div class="form__group">
+                          <label
+                            for="password"
+                            class="form__label form__label--medium"
+                          >
+                            Password
+                          </label>
+                          <div class="form__text-input">
+                            <input
+                              type="password"
+                              name="password"
+                              id="password"
+                              class="form__input"
+                              placeholder="Password"
+                              value="•••••••••"
+                              required
+                            />
                           </div>
-
-                          <div class="payment-card__bottom">
-                            <div class="div">
-                              <p class="payment-card__label">Card Holder</p>
-                              <p class="payment-card__value">Imran Khan</p>
-                            </div>
-                            <div class="div">
-                              <p class="payment-card__label">Expired</p>
-                              <p class="payment-card__value">11/22</p>
-                            </div>
-                            <div class="payment-card__circle"></div>
-                          </div>
-                        </article>
+                        </div>
                       </div>
 
-                      <!-- Add new payment -->
-                      <div class="col">
-                        <a href="./add-new-card.html" class="new-card">
-                          <img
-                            src="./assets/icon/plus.svg"
-                            alt=""
-                            class="new-card__icon icon"
-                          />
-                          <p class="new-card__text">Add New Card</p>
+                      <div class="form-card__bottom">
+                        <a
+                          href="./profile.html"
+                          class="btn btn--text form-card__cancel-btn"
+                        >
+                          Cancel
                         </a>
+                        <button class="btn btn--primary btn--rounded">
+                          Save Edit
+                        </button>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <h2 class="cart-info__heading">Account info</h2>
-                    <p class="cart-info__desc profile__desc">
-                      Addresses, contact information and password
-                    </p>
-                    <div class="row row-cols-2 row-cols-lg-1 gy-sm-2">
-                      <!-- Account info 1 -->
-                      <div class="col">
-                        <article class="account-info">
-                          <div class="account-info__icon">
-                            <img
-                              src="./assets/icon/message-2.svg"
-                              alt=""
-                              class="icon"
-                            />
-                          </div>
-                          <div>
-                            <h3 class="account-info__title">Email Address</h3>
-                            <p class="account-info__desc">
-                              12345678@gm.uit.edu.vn
-                            </p>
-                          </div>
-                        </article>
-                      </div>
-
-                      <!-- Account info 2 -->
-                      <div class="col">
-                        <article class="account-info">
-                          <div class="account-info__icon">
-                            <img
-                              src="./assets/icon/calling.svg"
-                              alt=""
-                              class="icon"
-                            />
-                          </div>
-                          <div>
-                            <h3 class="account-info__title">Phone number</h3>
-                            <p class="account-info__desc">
-                              +000 11122 2345 657
-                            </p>
-                          </div>
-                        </article>
-                      </div>
-
-                      <!-- Account info 3 -->
-                      <div class="col">
-                        <article class="account-info">
-                          <div class="account-info__icon">
-                            <img
-                              src="./assets/icon/location.svg"
-                              alt=""
-                              class="icon"
-                            />
-                          </div>
-                          <div>
-                            <h3 class="account-info__title">Add an address</h3>
-                            <p class="account-info__desc">
-                              Thu Duc, Ho Chi Minh, Viet Nam
-                            </p>
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <h2 class="cart-info__heading">Lists</h2>
-                    <p class="cart-info__desc profile__desc">
-                      2 items - Primary
-                    </p>
-
-                    <!-- Favorite item 1 -->
-                    <article class="favorite-item">
-                      <img
-                        src="./assets/img/product/item-1.png"
-                        alt=""
-                        class="favorite-item__thumb"
-                      />
-                      <div>
-                        <h3 class="favorite-item__title">
-                          Coffee Beans - Espresso Arabica and Robusta Beans
-                        </h3>
-                        <div class="favorite-item__content">
-                          <span class="favorite-item__price">$47.00</span>
-                          <button
-                            class="btn btn--primary btn--rounded favorite-item__btn"
-                          >
-                            Add to cart
-                          </button>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Favorite item 2 -->
-                    <article class="favorite-item">
-                      <img
-                        src="./assets/img/product/item-2.png"
-                        alt=""
-                        class="favorite-item__thumb"
-                      />
-                      <div>
-                        <h3 class="favorite-item__title">
-                          Lavazza Coffee Blends - Try the Italian Espresso
-                        </h3>
-                        <div class="favorite-item__content">
-                          <span class="favorite-item__price">$53.00</span>
-                          <button
-                            class="btn btn--primary btn--rounded favorite-item__btn"
-                          >
-                            Add to cart
-                          </button>
-                        </div>
-                      </div>
-                    </article>
+                    </form>
                   </div>
                 </div>
               </div>

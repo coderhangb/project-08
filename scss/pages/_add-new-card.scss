@@ -1,0 +1,21 @@
+.form-card {
+  &__row {
+    align-items: initial;
+  }
+
+  &__bottom {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__checkbox-label,
+  &__cancel-btn {
+    color: var(--text-color);
+  }
+
+  &__cancel-btn {
+    font-weight: 500;
+  }
+}

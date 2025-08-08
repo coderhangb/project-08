@@ -3009,7 +3009,7 @@ html.dark {
   display: inline-block;
   width: 18.5px;
   height: 18.5px;
-  border: 2px solid #9e9da8;
+  border: 2px solid currentColor;
   border-radius: 999px;
 }
 .form__label {
@@ -4140,7 +4140,15 @@ html.dark {
   align-items: center;
   column-gap: 30px;
 }
+.cart-info__back-arrow {
+  position: relative;
+  top: 3px;
+  width: 40px;
+  padding-right: 10px;
+}
 .cart-info__heading {
+  display: flex;
+  align-items: center;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.41667;
@@ -4804,6 +4812,22 @@ html.dark {
 }
 .profile__desc {
   margin-bottom: 16px;
+}
+
+.form-card__row {
+  align-items: initial;
+}
+.form-card__bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form-card__checkbox-label, .form-card__cancel-btn {
+  color: var(--text-color);
+}
+.form-card__cancel-btn {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */

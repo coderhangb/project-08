@@ -1,0 +1,96 @@
+@use "../abstracts";
+
+.profile {
+  margin-bottom: 50px;
+
+  &-container {
+    margin-top: 30px;
+  }
+
+  &__sidebar {
+    padding-bottom: 30px;
+    border-radius: 20px;
+    background: var(--profile-sidebar-bg);
+    box-shadow: 0 20px 60px 10px var(--profile-sidebar-shadow);
+    overflow: hidden;
+  }
+
+  &-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%),
+      url("../img/profile/cover.png") no-repeat center / cover;
+    box-shadow: 0 20px 60px 10px var(--profile-sidebar-shadow);
+
+    &__avatar {
+      width: 126px;
+      height: 126px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 14px 2px rgba(0, 0, 0, 0.08);
+      background: #ccc content-box;
+    }
+
+    &__name {
+      margin-top: 15px;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.44444;
+    }
+
+    &__desc {
+      margin-top: 2px;
+      color: #fafafd;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.46667;
+    }
+  }
+
+  &-menu {
+    margin-top: 30px;
+    padding: 0px 30px;
+
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.44444;
+    }
+
+    &__list {
+      margin: 11px -5px 0px;
+    }
+
+    &__icon {
+      width: 24px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      height: 32px;
+      padding: 0px 5px;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      line-height: 1.46667;
+      transition: background-color 0.25s;
+
+      &:hover {
+        background: var(--profile-sidebar-link-hover);
+      }
+    }
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+  }
+}

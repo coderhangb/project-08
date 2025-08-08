@@ -108,6 +108,18 @@ html.dark {
     --checkout-input-border-color: #fff;
   }
 
+  // Profile
+  --profile-sidebar-bg: #171c28;
+  --profile-sidebar-shadow: rgba(23, 28, 40, 0.2);
+  --profile-sidebar-link-hover: rgba(235, 235, 235, 0.1);
+
+  // Account info
+  --account-info-bg: #292e39;
+  --account-info-icon-bg: #171c28;
+
+  // Favorite item
+  --favorite-item-bg: #292e39;
+
   // Dialog
   --dialog-bg: #292e39;
   --dialog-shadow: rgba(23, 28, 40, 0.4);
